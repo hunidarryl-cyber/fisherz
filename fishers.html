@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fish Hackers Zimbabwe</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #07110d;
+            color: white;
+        }
+
+        header {
+            background-color: #102019;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #65f28a;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        section {
+            padding: 50px 10%;
+        }
+
+        .hero {
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 50px;
+            color: #65f28a;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 20px;
+            margin: 10px;
+            background-color: #65f28a;
+            color: black;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #102019;
+            padding: 25px;
+            border-radius: 15px;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .card h3 {
+            color: #65f28a;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #65f28a;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #102019;
+            color: #65f28a;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            background-color: #102019;
+            color: white;
+            border: 1px solid #65f28a;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #102019;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🐟 Fish Hackers Zimbabwe</h1>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#courses">Courses</a>
+        <a href="#membership">Membership</a>
+        <a href="#shop">Shop</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+
+<section id="home" class="hero">
+
+    <h2>Learn. Build. Protect.</h2>
+
+    <p>
+        Fish Hackers Zimbabwe is a digital community focused on
+        cybersecurity, programming, web development and digital skills.
+    </p>
+
+    <a href="#courses" class="button">Start Learning</a>
+
+    <a href="#services" class="button">Our Services</a>
+
+</section>
+
+
+<section id="services">
+
+    <h2>Our Services</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🌐 Website Design</h3>
+
+            <p>
+                We create websites for students, creators
+                and small businesses.
+            </p>
+
+            <h3>From $50</h3>
+
+            <a href="#contact" class="button">
+                Request Website
+            </a>
+        </div>
+
+
+        <div class="card">
+            <h3>🛡 Cybersecurity Education</h3>
+
+            <p>
+                Learn cybersecurity, online safety,
+                networks and ethical security practices.
+            </p>
+
+            <h3>From $20</h3>
+
+            <a href="#contact" class="button">
+                Book Training
+            </a>
+        </div>
+
+
+        <div class="card">
+            <h3>💻 Programming</h3>
+
+            <p>
+                Beginner programming and Computer Science
+                tutoring.
+            </p>
+
+            <h3>From $10</h3>
+
+            <a href="#contact" class="button">
+                Book Session
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="courses">
+
+    <h2>Courses</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>O Level Computer Science</h3>
+
+            <p>
+                Learn programming, HTML, algorithms
+                and computer systems.
+            </p>
+
+            <h3>$5</h3>
+
+            <button class="button"
+                onclick="buyCourse('O Level Computer Science', 5)">
+                Buy Course
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Cybersecurity Basics</h3>
+
+            <p>
+                Learn about passwords, phishing,
+                privacy, networks and online safety.
+            </p>
+
+            <h3>$10</h3>
+
+            <button class="button"
+                onclick="buyCourse('Cybersecurity Basics', 10)">
+                Buy Course
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>HTML Starter Course</h3>
+
+            <p>
+                Learn how to create your own websites
+                using HTML and CSS.
+            </p>
+
+            <h3>$3</h3>
+
+            <button class="button"
+                onclick="buyCourse('HTML Starter Course', 3)">
+                Buy Course
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="membership">
+
+    <h2>Membership</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>Free</h3>
+
+            <p>
+                Access community updates and selected
+                learning resources.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Student</h3>
+
+            <p>$3 per month</p>
+
+            <p>
+                Study resources, community sessions
+                and events.
+            </p>
+
+            <button class="button"
+                onclick="joinMembership('Student', 3)">
+                Join
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Supporter</h3>
+
+            <p>$10 per month</p>
+
+            <p>
+                Support the community and receive
+                supporter resources.
+            </p>
+
+            <button class="button"
+                onclick="joinMembership('Supporter', 10)">
+                Join
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="shop">
+
+    <h2>Digital Shop</h2>
+
+    <p>
+        Sell legal digital products such as:
+    </p>
+
+    <ul>
+        <li>Computer Science notes</li>
+        <li>HTML templates</li>
+        <li>Study guides</li>
+        <li>Programming exercises</li>
+        <li>Graphic designs</li>
+        <li>Educational ebooks</li>
+    </ul>
+
+    <p>
+        Connect the purchase buttons to a secure payment
+        provider before accepting real payments.
+    </p>
+
+</section>
+
+
+<section id="support">
+
+    <h2>Support Fish Hackers Zimbabwe</h2>
+
+    <p>
+        Support our educational community through
+        donations and sponsorships.
+    </p>
+
+    <a href="#contact" class="button">
+        Become a Sponsor
+    </a>
+
+</section>
+
+
+<section id="contact">
+
+    <h2>Contact Us</h2>
+
+    <form onsubmit="sendMessage(event)">
+
+        <input
+            type="text"
+            placeholder="Your Name"
+            required
+        >
+
+        <input
+            type="email"
+            placeholder="Your Email"
+            required
+        >
+
+        <select>
+
+            <option>Website Service</option>
+            <option>Cybersecurity Training</option>
+            <option>Programming</option>
+            <option>Course</option>
+            <option>Membership</option>
+            <option>Sponsorship</option>
+
+        </select>
+
+        <textarea
+            placeholder="Your Message"
+            required>
+        </textarea>
+
+        <button class="button" type="submit">
+            Send Message
+        </button>
+
+    </form>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 Fish Hackers Zimbabwe
+    </p>
+
+    <p>
+        Ethical cybersecurity and digital education.
+    </p>
+
+</footer>
+
+
+<script>
+
+function buyCourse(course, price) {
+
+    alert(
+        "You selected: " +
+        course +
+        "\nPrice: $" +
+        price +
+        "\n\nConnect this button to your secure payment checkout."
+    );
+
+}
+
+
+function joinMembership(type, price) {
+
+    alert(
+        type +
+        " Membership\nPrice: $" +
+        price +
+        " per month\n\nConnect this button to your secure payment provider."
+    );
+
+}
+
+
+function sendMessage(event) {
+
+    event.preventDefault();
+
+    alert(
+        "Thank you! Your enquiry has been received."
+    );
+
+}
+
+</script>
+
+</body>
+</html>
